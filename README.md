@@ -17,4 +17,3 @@ Booksy blends shopping and social interaction to create a unique and personalize
 ### 💻 Frontend
 - React.js
 - CSS
-## 📁 Folder Structure (Frontend)
