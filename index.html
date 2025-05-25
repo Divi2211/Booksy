@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksy - Your Social Bookstore</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">BOOKSY</div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="cart.html" class="cart-icon">
+                🛒 <span id="cart-count">0</span></a>
+
+        </nav>
+    </header>
+<!-- Hero Section with Swiper Slider -->
+<section class="hero">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\explore.jpg" alt="Discover New Books">
+        <div class="hero-content">
+          <h1>Discover Your Next Favorite Book</h1>
+          <p>Explore new releases, bestsellers, and more on Booksy.</p>
+          <a href="#shop" class="cta-btn">Start Shopping</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\real time chat.jpg" alt="Real Time Chat">
+        <div class="hero-content">
+          <h1>Connect with Fellow Readers</h1>
+          <p>Discuss books in real-time with other readers.</p>
+          <a href="#features" class="cta-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\wide selection.jpg" alt="Wide Selection">
+        <div class="hero-content">
+          <h1>Explore a Wide Selection</h1>
+          <p>Thousands of books across genres and authors.</p>
+          <a href="#features" class="cta-btn">Discover Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination and Navigation if needed -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="slider.js"></script>
+<section class="categories" id="categories">
+    <h2 class="section-title">Discover Your Next Book</h2>
+    <div class="category-list">
+        <div class="category-item">
+            <h3>Bestsellers</h3>
+            <p>Top books that everyone’s talking about</p>
+            <a href="#" class="explore-btn">Explore</a>
+        </div>
+        <div class="category-item">
+            <h3>New Arrivals</h3>
+            <p>The latest additions to our collection</p>
+            <a href="#" class="explore-btn">Explore</a>
+        </div>
+        <div class="category-item">
+            <h3>Recommended for You</h3>
+            <p>Personalized choices based on your taste</p>
+            <a href="#shop" class="explore-btn">Explore</a>
+        </div>
+        <div class="category-item">
+            <h3>Classics</h3>
+            <p>Timeless reads you’ll cherish</p>
+            <a href="#classics" class="explore-btn">Explore</a>
+        </div>
+    </div>
+</section>
+<script src="categories.js"></script>
+
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Booksy?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <i class="icon">📚</i>
+                <h3>Wide Selection</h3>
+                <p>Find books across various genres and authors.</p>
+            </div>
+            <div class="feature-card">
+                <i class="icon">💬</i>
+                <h3>Real-Time Chat</h3>
+                <p>Connect with other readers and discuss books.</p>
+            </div>
+            <div class="feature-card">
+                <i class="icon">🚚</i>
+                <h3>Fast Shipping</h3>
+                <p>Get your books delivered to you quickly.</p>
+            </div>
+            <div class="feature-card">
+                <i class="icon">🌟</i>
+                <h3>Personalized Recommendations</h3>
+                <p>Get book suggestions based on your interests.</p>
+            </div>
+        </div>
+    </section>
+
+<section class="classics" id="classics">
+    <h2 class="section-title">Timeless Classics</h2>
+    <p class="section-description">Discover the books that have captivated readers for generations.</p>
+    <div class="classic-books-list">
+        <div class="classic-book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\pride and prejudice.jpeg" alt="Pride and Prejudice">
+            <h4>Pride and Prejudice</h4>
+            <p>by Jane Austen</p>
+        </div>
+        <div class="classic-book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\1984.jpeg" alt="1984">
+            <h4>1984</h4>
+            <p>by George Orwell</p>
+        </div>
+        <div class="classic-book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\to kill a mocking bird.jpeg" alt="To Kill a Mockingbird">
+            <h4>To Kill a Mockingbird</h4>
+            <p>by Harper Lee</p>
+        </div>
+        <div class="classic-book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\moby dick.jpeg" alt="Moby Dick">
+            <h4>Moby Dick</h4>
+            <p>by Herman Melville</p>
+        </div>
+        <div class="classic-book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\the great gatsby.jpg" alt="The Great Gatsby">
+            <h4>The Great Gatsby</h4>
+            <p>by F.Scott Fitzgerald</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Shop Section -->
+<section class="shop" id="shop">
+    <h2>Recommended For You</h2>
+    <div class="book-list">
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\verity.jpg" alt="Book Cover">
+            <h4>VERITY</h4>
+            <p class="author">Colleen Hoover</p>
+            <p>$42</p>
+            <button class="add-to-cart-btn" data-title="VERITY" data-author="Colleen Hoover" data-price="42">Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\the girl.jpg" alt="Book Cover">
+            <h4>The Girl Who Knew Too Much</h4>
+            <p class="author">Vikrant Khanna</p>
+            <p>$38</p>
+            <button class="add-to-cart-btn" data-title="The Girl Who Knew Too Much" data-author="Vikrant Khanna" data-price="38">Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\you only live once.jpg" alt="Book Cover">
+            <h4>YOU ONLY LIVE ONCE</h4>
+            <p class="author">Stuti Changle</p>
+            <p>$30</p>
+            <button class="add-to-cart-btn" data-title="YOU ONLY LIVE ONCE" data-author="Stuti Changle" data-price="30">Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\something i never told you.jpg" alt="Book Cover">
+            <h4>Something I Never Told You</h4>
+            <p class="author">Shravya Bhinder </p>
+            <p>$25</p>
+            <button class="add-to-cart-btn" data-title="Something I Never Told You" data-author="Shravya Bhinder" data-price="25">Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\never lie.jpg" alt="Book Cover">
+            <h4>Never Lie</h4>
+            <p class="author">The Housemaid Freida McFadden</p>
+            <p>$20</p>
+            <button class="add-to-cart-btn" data-title="Never Lie" data-author="Freida McFadden" data-price="20">Add to Cart</button>
+        </div>
+        <div class="book-item">
+            <img src="C:\Users\divij\OneDrive\Desktop\Apps\resources\books\on the open road.jpg" alt="Book Cover">
+            <h4>On The Open Road</h4>
+            <p class="author">Stuti Changle</p>
+            <p>$15</p>
+            <button class="add-to-cart-btn" data-title="On The Open Road" data-author="Stuti Changle" data-price="15">Add to Cart</button>
+    </div>
+</section>
+
+<section class="chat-section" id="chat">
+    <h2>Join the Conversation!</h2>
+    <div class="chat-box" id="chat-box">
+        <!-- Messages will be appended here -->
+    </div>
+    <form >
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="text" id="messageInput" placeholder="Type your message">
+        <button id="sendButton">Send</button>
+    </form>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Readers Say</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p class="testimonial-text">“Booksy has a fantastic collection. I found all my favorite books here!”</p>
+            <h3 class="testimonial-author">– Jane Doe</h3>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">“The recommendations are spot on. My new go-to for book shopping!”</p>
+            <h3 class="testimonial-author">– John Smith</h3>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-text">“Easy, fast, and great selection. Absolutely love it!”</p>
+            <h3 class="testimonial-author">– Emily White</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Subscription Banner -->
+<section class="subscribe">
+    <h2>Stay Updated with Booksy</h2>
+    <p>Subscribe to our newsletter to get the latest updates, book recommendations, and exclusive offers!</p>
+    <form class="subscribe-form">
+        <input type="email" class="email-input" placeholder="Enter your email">
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Booksy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
